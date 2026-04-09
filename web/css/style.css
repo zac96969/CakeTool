@@ -1,11 +1,3 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : Apr 9, 2026, 3:13:47 PM
-    Author     : Admin
-*/
 .card-hover {
     position: relative;
     overflow: hidden;
@@ -14,6 +6,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 .card-hover img {
     width: 100%;
     display: block;
+    transition: 0.3s;
+}
+
+/* Zoom ảnh */
+.card-hover:hover img {
+    transform: scale(1.1);
 }
 
 /* Overlay */
@@ -24,7 +22,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     width: 100%;
     height: 100%;
 
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
 
     display: flex;
@@ -34,12 +32,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
     opacity: 0;
     transition: 0.3s;
-    padding: 10px;
 
-    z-index: 10; /* 🔥 QUAN TRỌNG */
+    z-index: 10;
 }
 
-/* Hover */
 .card-hover:hover .overlay {
     opacity: 1;
+}
+
+.overlay button {
+    border-radius: 20px;
+    font-weight: bold;
 }
