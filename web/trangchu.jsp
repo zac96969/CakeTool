@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
+
+
     <body>
         <!-- Lớp chứa -->
         <div class="container">
@@ -78,6 +80,15 @@
                 </div>
                 <!-- CONTENT -->
                 <div class="col-8 border">
+                    <!-- Chat Button -->
+                    <div id="chat-button" onclick="toggleChat()">CHAT AI</div>
+
+                    <!-- Chat Box -->
+                    <div id="chat-box">
+                        <div id="chat-header">Trợ lý AI</div>
+                        <div id="chat-content"></div>
+                        <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." onkeypress="handleKey(event)">
+                    </div>
                     <div class="row" style="color: #5b1412" style="background-color: ;"><h3>DANH SÁCH SẢN PHẨM</h3></div>
                     <div class="row">
 
@@ -85,52 +96,52 @@
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image1.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Tô trộn bột</h5><p class="text-danger">12.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Tô inox trộn bột chuyên dụng</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image2.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Phới lòng</h5><p class="text-danger">45.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Dụng cụ đánh trứng whisk</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image3.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Spatula silicon</h5><p class="text-danger">35.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Phới dẹt vét bột sạch</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 2 ===== -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image4.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Muỗng gỗ</h5><p class="text-danger">25.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Muỗng gỗ tự nhiên</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image5.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Cây cán bột</h5><p class="text-danger">60.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Gỗ nhẵn mịn, cán bột đều</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image6.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>cân điện tử</h5><p class="text-danger">155.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Độ chính xác 0.1g</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 3 ===== -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image7.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Cốc đong</h5><p class="text-danger">40.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Measuring cup nhựa cao cấp</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image8.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Muỗn đong</h5><p class="text-danger">30.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Bộ muỗng đong dinh dưỡng</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image9.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Rây bột</h5><p class="text-danger">35.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Lọc bột siêu mịn</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 4 ===== -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image10.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Khay nướng</h5><p class="text-danger">95.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Khay nhôm chống dính</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image11.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Lò nướng bánh</h5><p class="text-danger">2.500.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Lò nướng đối lưu 30l</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image12.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Khuôn bánh tròn</h5><p class="text-danger">75.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Size 18cm</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 5 ===== -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image13.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Khuôn bánh vuông</h5><p class="text-danger">80.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Size 20cm nhôm đúc</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image14.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Khuôn cupcake</h5><p class="text-danger">110.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Khuôn 12 ổ chống dính</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image15.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Giấy nến</h5><p class="text-danger">25.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Cuộn giấy nến nướng bánh</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 6 -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image16.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Tấm lót silicon</h5><p class="text-danger">70.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Chịu nhiệt tốt, dùng nhiều lần</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image17.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Nhiệt kế lò</h5><p class="text-danger">95.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Đo nhiệt độ thực tế trong lò</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image18.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Giá làm nguội bánh</h5><p class="text-danger">65.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Giá inox thoát nhiệt nhanh</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 7 -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image19.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Túi bánh kem</h5><p class="text-danger">45.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Set 100 túi nilon</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image20.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Đui bắt kem</h5><p class="text-danger">120.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Bộ 24 đui inox nhiều loại</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image21.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Bàn xoay bánh</h5><p class="text-danger">190.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Bàn xoay trang trí bánh kem</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 8 -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image22.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Dao chà láng</h5><p class="text-danger">55.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Spatula kim loại phẳng</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image23.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Cây chia bột</h5><p class="text-danger">40.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Dụng cụ chia phần bột đều</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image24.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Khuôn cắt cookie</h5><p class="text-danger">50.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Bộ tạo hình bánh qquy</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 9 -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image25.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Máy đánh trứng cầm tay</h5><p class="text-danger">450.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>7 tốc độ, công suất 180W</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image26.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Chổi quét bơ</h5><p class="text-danger">15.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Silicon mềm mại</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image27.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Dao cắt bánh</h5><p class="text-danger">35.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Lưỡi dài răng cưa</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                         <!-- ===== HÀNG 10 -->
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image28.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Hộp đựng bánh</h5><p class="text-danger">25.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Hộp nhựa trong suốt</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image29.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Dụng cụ tách lòng đỏ</h5><p class="text-danger">12.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Tách trứng nhanh gọn</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image30.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Khuôn tạo chữ/số</h5><p class="text-danger">65.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>Bộ khuôn chữ cái và số</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>
-                        
+
                     </div>
                 </div>
                 <!-- RIGHT MENU -->
