@@ -4,16 +4,17 @@
  */
 package Controllers;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class ChatServlet extends HttpServlet {
 
-    private static final String API_KEY = "sk-xxxx";
+    private static final String API_KEY = "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";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

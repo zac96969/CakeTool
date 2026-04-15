@@ -16,8 +16,6 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
-
-
     <body>
         <!-- Lớp chứa -->
         <div class="container">
@@ -80,15 +78,6 @@
                 </div>
                 <!-- CONTENT -->
                 <div class="col-8 border">
-                    <!-- Chat Button -->
-                    <div id="chat-button" onclick="toggleChat()">CHAT AI</div>
-
-                    <!-- Chat Box -->
-                    <div id="chat-box">
-                        <div id="chat-header">Trợ lý AI</div>
-                        <div id="chat-content"></div>
-                        <input type="text" id="chat-input" placeholder="Nhập tin nhắn..." onkeypress="handleKey(event)">
-                    </div>
                     <div class="row" style="color: #5b1412" style="background-color: ;"><h3>DANH SÁCH SẢN PHẨM</h3></div>
                     <div class="row">
 
@@ -162,16 +151,19 @@
                                     <label for="floatingPassword">Mật khẩu</label>
                                 </div>
                                 <button type="submit" style="background-color: #fd9191;" class="btn btn-success">Đăng nhập</button>
+                                <button type="submit" style="background-color: #fd9191;" class="btn btn-success">Đăng ký</button>
                             </form>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="row border" style="background: #5b1412">
-                <p class="w-100 text-white">
-                    @copyright by Coang
-                </p>
+            <div class="row border text-white" style="background: #5b1412">
+                
+                    <div class="col-md-4 mb-3">Nguyễn Đình Quang|22/04/2005</div>
+                    <div class="col-md-4 mb-3">Phạm Tiến Phát|10/03/2005</div>
+                    <div class="col-md-4 mb-3">Nguyễn Hữu Thắng|23/06//2005</div>
+                
             </div>
         </div>
         <script src="js/bootstrap.bundle.js" type="text/javascript"></script>

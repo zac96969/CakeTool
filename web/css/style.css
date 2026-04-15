@@ -44,39 +44,63 @@
     border-radius: 20px;
     font-weight: bold;
 }
+/* Nút chat */
 #chat-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
+
+    width: 60px;
+    height: 60px;
+
     background: #5b1412;
     color: white;
-    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 50%;
+    font-size: 24px;
     cursor: pointer;
+
+    z-index: 9999;
 }
 
+/* Khung chat */
 #chat-box {
     position: fixed;
-    bottom: 80px;
+    bottom: 90px;
     right: 20px;
+
     width: 300px;
+    height: 400px;
+
     background: white;
     border: 1px solid #ccc;
+
     display: none;
+    flex-direction: column;
+
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+/* Header */
 #chat-header {
     background: #5b1412;
     color: white;
     padding: 10px;
 }
 
+/* Nội dung */
 #chat-content {
-    height: 200px;
+    flex: 1;
     overflow-y: auto;
     padding: 10px;
 }
 
+/* Input */
 #chat-input {
     width: 100%;
     padding: 10px;
