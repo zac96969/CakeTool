@@ -78,7 +78,7 @@
                 </div>
                 <!-- CONTENT -->
                 <div class="col-8 border">
-                    <div class="row" style="color: #5b1412" style="background-color: ;"><h3>DANH SÁCH SẢN PHẨM</h3></div>
+                    <div class="row" style="color: #5b1412" style="background-color: "><h3>DANH SÁCH SẢN PHẨM</h3></div>
                     <div class="row">
 
                         <!-- ===== HÀNG 1 ===== -->

@@ -82,7 +82,7 @@
                         <div style="color: #5b1412">DANH SÁCH SẢN PHẨM</div>
                         <a href="trangchu.jsp">Quay lại</a>
                     </div>
-                    <div class="row" style="color: #5b1412" style="background-color: ;"><h3>DANH SÁCH SẢN PHẨM</h3></div>
+                    <div class="row" style="color: #5b1412" style="background-color: "><h3>DANH SÁCH SẢN PHẨM</h3></div>
                     <div class="row">
 
                         <!-- ===== HÀNG 1 -->

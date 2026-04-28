@@ -78,7 +78,7 @@
                 </div>
                 <!-- CONTENT -->
                 <div class="col-8 border">
-                    <div class="row" style="color: #5b1412" style="background-color: ;"><h3>DANH SÁCH SẢN PHẨM</h3></div>
+                    <div class="row" style="color: #5b1412" style="background-color: "><h3>DANH SÁCH SẢN PHẨM</h3></div>
                     <div class="row">
 
                         <div class="col-md-4 mb-3"><div class="card h-100 card-hover"> <img src="images/image25.jpg" class="card-img-top" style="height:200px; object-fit:cover;"><div class="card-body"><h5>Máy đánh trứng cầm tay</h5><p class="text-danger">450.000đ</p></div> <!-- Overlay khi hover --><div class="overlay"><p>7 tốc độ, công suất 180W</p> <button class="btn btn-warning mt-2">Thêm vào giỏ</button> </div></div></div>

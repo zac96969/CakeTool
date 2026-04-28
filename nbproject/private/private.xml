@@ -3,14 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/CakeTool/web/trangchu.html</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/CakeTool/web/css/style.css</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/CakeTool/web/trangchu.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/CakeTool/web/dccoban.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/CakeTool/web/dcnuong.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/CakeTool/web/dctrangtri.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/CakeTool/web/dcnangcao.jsp</file>
-            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/CakeTool/web/dckhac.jsp</file>
+            <file>file:/C:/Users/tphat/CakeTool/web/gioithieu.jsp</file>
+            <file>file:/C:/Users/tphat/CakeTool/web/dangky.jsp</file>
+            <file>file:/C:/Users/tphat/CakeTool/web/lienhe.jsp</file>
+            <file>file:/C:/Users/tphat/CakeTool/web/dangnhap.jsp</file>
+            <file>file:/C:/Users/tphat/CakeTool/web/giohang.jsp</file>
+            <file>file:/C:/Users/tphat/CakeTool/web/donhang.jsp</file>
+            <file>file:/C:/Users/tphat/CakeTool/src/java/Controllers/OrderControl.java</file>
         </group>
     </open-files>
 </project-private>
